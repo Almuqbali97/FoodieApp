@@ -4,6 +4,8 @@ import MealsGrid from '@/components/meals/meals-grid'
 import { getMeals } from '@/lib/meals'
 import { Suspense } from 'react';
 
+export const runtime = "edge";
+
 export const metadata = {
     title: 'All Meals',
     description: 'Browrs the delicious meals, shared by a food-loving community.',

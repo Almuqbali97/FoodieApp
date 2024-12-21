@@ -2,7 +2,7 @@ import { getMeal } from '@/lib/meals'
 import styles from './page.module.css'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-
+export const runtime = "edge";
 export async function generateMetadata({ params }) {
     const meal = await getMeal(params.mealSlug);
     if (!meal) {
